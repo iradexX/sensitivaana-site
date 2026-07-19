@@ -1,3 +1,5 @@
+import anaImage from "../assets/images/Ana.png";
+
 export default function About() {
   return (
     <section
@@ -10,7 +12,7 @@ export default function About() {
         {/* FOTO */}
         <div className="flex justify-center">
           <img
-            src="src\assets\images\Ana.png"
+            src={anaImage}
             alt="Sensitiva Ana"
             className="rounded-3xl shadow-2xl w-full max-w-md"
           />
