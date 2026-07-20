@@ -71,16 +71,18 @@ export default function Hero() {
         </motion.div>
 
         <motion.h1
-          initial={{ opacity: 0, y: 35 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.2 }}
-          className="text-5xl font-bold leading-tight text-white drop-shadow-2xl sm:text-6xl md:text-8xl"
-        >
-          Encontre respostas para o seu{" "}
-          <span className="bg-linear-to-r from-yellow-200 via-yellow-400 to-amber-600 bg-clip-text text-transparent">
-            caminho
-          </span>
-        </motion.h1>
+  initial={{ opacity: 0, y: 35 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 1, delay: 0.2 }}
+  className="text-5xl font-bold leading-tight text-white drop-shadow-2xl sm:text-6xl md:text-8xl"
+>
+  Consulta de Tarot
+  <br />
+  Online pelo{" "}
+  <span className="bg-linear-to-r from-yellow-200 via-yellow-400 to-amber-600 bg-clip-text text-transparent">
+    WhatsApp
+  </span>
+</motion.h1>
 
         <motion.p
           initial={{ opacity: 0, y: 30 }}
@@ -88,8 +90,8 @@ export default function Hero() {
           transition={{ duration: 1, delay: 0.45 }}
           className="mx-auto mt-7 max-w-3xl text-lg leading-8 text-gray-200 md:text-xl"
         >
-          Consultas de Tarot, Astrologia e orientação espiritual com
-          atendimento online, individual e sigiloso.
+          Receba orientação espiritual através do Tarot, Cartomancia e Astrologia.
+Atendimento online, individual, sigiloso e com resposta rápida pelo WhatsApp.
         </motion.p>
 
         <motion.div
@@ -113,7 +115,7 @@ export default function Hero() {
 
             <MessageCircle size={25} className="relative" />
 
-            <span className="relative">Agendar consulta</span>
+            <span className="relative">Falar no WhatsApp Agora</span>
           </motion.a>
         </motion.div>
 
