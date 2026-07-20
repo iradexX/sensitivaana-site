@@ -87,13 +87,13 @@ export default function Services() {
                   stiffness: 250,
                   damping: 18,
                 }}
-                className="group relative overflow-hidden rounded-3xl border border-yellow-500/20 bg-white/4 p-7 shadow-xl backdrop-blur-md"
+                className="group relative flex h-full min-h-[390px] flex-col overflow-hidden rounded-3xl border border-yellow-500/20 bg-white/4 p-7 shadow-xl backdrop-blur-md"
               >
                 <div className="absolute inset-0 bg-linear-to-br from-yellow-400/0 via-purple-600/0 to-purple-600/0 opacity-0 transition duration-500 group-hover:from-yellow-400/10 group-hover:via-purple-600/10 group-hover:to-transparent group-hover:opacity-100" />
 
                 <div className="absolute -right-16 -top-16 h-40 w-40 rounded-full bg-yellow-400/0 blur-3xl transition duration-500 group-hover:bg-yellow-400/15" />
 
-                <div className="relative">
+                <div className="relative flex h-full flex-col">
                   <motion.div
                     whileHover={{ rotate: 8, scale: 1.1 }}
                     className="flex h-16 w-16 items-center justify-center rounded-2xl border border-yellow-400/30 bg-yellow-500/10 text-yellow-400 shadow-[0_0_25px_rgba(250,204,21,0.1)] transition duration-500 group-hover:shadow-[0_0_35px_rgba(250,204,21,0.3)]"
@@ -109,15 +109,17 @@ export default function Services() {
                     {service.description}
                   </p>
 
-                  <a
-                    href={whatsappUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mt-7 inline-flex items-center gap-2 font-semibold text-yellow-400 transition hover:text-yellow-300"
-                  >
-                    <MessageCircle size={19} />
-                    Agendar pelo WhatsApp
-                  </a>
+                  <div className="mt-auto pt-7">
+                    <a
+                      href={whatsappUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 font-semibold text-yellow-400 transition hover:text-yellow-300"
+                    >
+                      <MessageCircle size={19} />
+                      Agendar pelo WhatsApp
+                    </a>
+                  </div>
                 </div>
 
                 <div className="absolute bottom-0 left-0 h-px w-0 bg-linear-to-r from-transparent via-yellow-400 to-transparent transition-all duration-500 group-hover:w-full" />
@@ -142,6 +144,12 @@ export default function Services() {
             <MessageCircle size={24} />
             Agendar consulta pelo WhatsApp
           </a>
+
+          <div className="mt-5 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm text-gray-300">
+            <span>✓ Atendimento online</span>
+            <span>✓ Consulta individual</span>
+            <span>✓ Sigilo absoluto</span>
+          </div>
         </motion.div>
       </div>
     </section>
