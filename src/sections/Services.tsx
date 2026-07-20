@@ -14,25 +14,25 @@ const services = [
   {
     title: "Consulta de Tarot",
     description:
-      "Orientação para amor, trabalho, decisões e caminhos futuros por meio das cartas.",
+      "Tire dúvidas sobre amor, trabalho, decisões e vida pessoal através da leitura de Tarot.",
     icon: Sparkles,
   },
   {
     title: "Consulta Amorosa",
     description:
-      "Clareza sobre sentimentos, relacionamentos, reconciliação e vida afetiva.",
+      "Receba orientação sobre sentimentos, relacionamentos, reconciliação e vida afetiva.",
     icon: Heart,
   },
   {
     title: "Astrologia",
     description:
-      "Compreenda suas características, desafios e possibilidades por meio dos astros.",
+      "Conheça melhor suas características, desafios e possibilidades através dos astros.",
     icon: MoonStar,
   },
   {
     title: "Orientação Espiritual",
     description:
-      "Acolhimento e direcionamento para momentos de dúvida, ansiedade e transformação.",
+      "Atendimento acolhedor para momentos de dúvida, insegurança e transformação pessoal.",
     icon: Stars,
   },
 ];
@@ -60,12 +60,12 @@ export default function Services() {
           </span>
 
           <h2 className="mt-4 text-4xl font-bold text-white md:text-6xl">
-            Consultas para orientar o seu caminho
+            Escolha a consulta ideal para você
           </h2>
 
           <p className="mt-6 text-lg leading-8 text-gray-300">
-            Escolha o atendimento mais adequado para o seu momento e receba
-            orientação com acolhimento, respeito e sigilo.
+            Tarot, consulta amorosa, astrologia e orientação espiritual com
+            atendimento online, individual e sigiloso pelo WhatsApp.
           </p>
         </div>
 
@@ -116,7 +116,7 @@ export default function Services() {
                     className="mt-7 inline-flex items-center gap-2 font-semibold text-yellow-400 transition hover:text-yellow-300"
                   >
                     <MessageCircle size={19} />
-                    Saiba mais
+                    Agendar pelo WhatsApp
                   </a>
                 </div>
 
@@ -125,6 +125,24 @@ export default function Services() {
             );
           })}
         </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7 }}
+          className="mt-14 text-center"
+        >
+          <a
+            href={whatsappUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 rounded-full bg-green-500 px-8 py-4 text-lg font-bold text-white shadow-[0_0_35px_rgba(34,197,94,0.35)] transition hover:scale-105 hover:bg-green-600"
+          >
+            <MessageCircle size={24} />
+            Agendar consulta pelo WhatsApp
+          </a>
+        </motion.div>
       </div>
     </section>
   );
