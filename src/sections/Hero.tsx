@@ -66,7 +66,7 @@ export default function Hero() {
       </motion.div>
 
       {/* Escurecimento geral */}
-      <div className="absolute inset-0 bg-black/25" />
+      <div className="absolute inset-0 bg-black/15" />
 
       {/* Escurecimento vertical */}
       <div className="absolute inset-0 bg-linear-to-b from-black/45 via-black/30 to-[#05010d]/95" />
@@ -159,7 +159,8 @@ export default function Hero() {
               drop-shadow-2xl
               sm:text-6xl
               md:text-6xl
-              lg:text-[4.6rem]
+              lg:text-[4.2rem]
+              lg:max-w-205
             "
           >
             Encontre clareza para sua vida{" "}
