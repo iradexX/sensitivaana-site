@@ -167,7 +167,7 @@ export default function Hero() {
 
       <div className="relative flex min-h-svh flex-col lg:hidden">
         {/* Área superior da foto */}
-        <div className="relative h-[46vh] min-h-85 overflow-hidden">
+        <div className="relative h-[42vh] min-h-80 max-h-107.5 overflow-hidden">
           <motion.img
             src={heroImage}
             alt="Sensitiva Ana realizando atendimento espiritual com cartas de Tarot"
@@ -179,9 +179,9 @@ export default function Hero() {
               inset-0
               h-full
               w-full
-              object-cover
-              object-[68%_18%]
-            "
+             object-[70%_8%]
+             sm:object-[70%_10%]
+             "
           />
 
           {/* Escurecimento leve sobre a foto */}
@@ -219,7 +219,7 @@ export default function Hero() {
           className="
             relative
             z-10
-            -mt-10
+            -mt-6
             flex
             flex-1
             flex-col
@@ -264,15 +264,16 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, delay: 0.15 }}
             className="
-              max-w-3xl
-              text-[2.45rem]
-              font-bold
-              leading-[1.06]
-              text-white
-              drop-shadow-2xl
-              sm:text-[3.4rem]
-              md:text-[4rem]
-            "
+           max-w-205
+           text-[2.15rem]
+           font-bold
+            leading-[1.08]
+           text-white
+           drop-shadow-2xl
+           min-[430px]:text-[2.45rem]
+           sm:text-[2.9rem]
+            md:text-[3.25rem]
+"
           >
             Encontre clareza para sua vida{" "}
             <span
