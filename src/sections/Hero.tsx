@@ -8,8 +8,8 @@ import {
   Star,
 } from "lucide-react";
 
-import heroDesktop from "../assets/images/hero-desktop.png";
-import heroMobile from "../assets/images/hero-mobile.png";
+import heroDesktop from "../assets/images/heroDesktop.png";
+import heroMobile from "../assets/images/heroMobile.png";
 import { CONTACT } from "../config/contact";
 
 const whatsappNumber = CONTACT.whatsapp;
