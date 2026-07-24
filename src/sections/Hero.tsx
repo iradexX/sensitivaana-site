@@ -168,22 +168,22 @@ export default function Hero() {
 
       <div className="relative flex min-h-svh flex-col lg:hidden">
         {/* Área superior da foto */}
-        <div className="relative h-[42vh] min-h-80 max-h-107.5 overflow-hidden">
+        <div className="relative h-[48vh] min-h-97.5 max-h-130 overflow-hidden bg-[#05010d]">
           <motion.img
-            src={heroMobile}
-            alt="Sensitiva Ana realizando atendimento espiritual com cartas de Tarot"
-            initial={{ scale: 1.06, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            transition={{ duration: 1.6, ease: "easeOut" }}
-            className="
-              absolute
-              inset-0
-              h-full
-              w-full
-             object-top
-             sm:object-[70%_10%]
-             "
-          />
+         src={heroMobile}
+         alt="Sensitiva Ana realizando atendimento espiritual com cartas de Tarot"
+         initial={{ scale: 1.03, opacity: 0 }}
+         animate={{ scale: 1, opacity: 1 }}
+         transition={{ duration: 1.6, ease: "easeOut" }}
+          className="
+          absolute
+          inset-0
+          h-full
+         w-full
+         object-contain
+         object-top
+         "
+/>
 
           {/* Escurecimento leve sobre a foto */}
           <div className="absolute inset-0 bg-black/15" />
