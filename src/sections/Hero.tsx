@@ -166,7 +166,7 @@ export default function Hero() {
       {/* MOBILE E TABLET */}
       {/* ========================================================= */}
 
-      <div className="relative flex min-h-svh flex-col lg:hidden">
+      <div className="relative flex min-h-svh w-full max-w-full flex-col overflow-hidden pt-20 lg:hidden">
         {/* Área superior da foto */}
         <div className="relative h-[48vh] min-h-97.5 max-h-130 overflow-hidden bg-[#05010d]">
           <motion.img
