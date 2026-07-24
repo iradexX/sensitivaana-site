@@ -49,13 +49,13 @@ export default function Hero() {
         initial={{ scale: 1.07, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 1.8, ease: "easeOut" }}
-        className="absolute inset-0 h-full w-full object-cover object-[75%_center] lg:object-[70%_center]"
+        className="absolute inset-0 h-full w-full object-cover object-[70%_center] lg:object-[72%_center]"
       />
 
       {/* Escurecimento para melhorar a leitura */}
-      <div className="absolute inset-0 bg-black/45" />
+      <div className="absolute inset-0 bg-black/25" />
 
-      <div className="absolute inset-0 bg-linear-to-b from-black/65 via-black/55 to-[#05010d]" />
+      <div className="absolute inset-0 bg-linear-to-b from-black/50 via-black/40 to-[#05010d]/95" />
 
       {/* Luz roxa decorativa */}
       <motion.div
@@ -106,7 +106,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 28 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 0.15 }}
-          className="mx-auto max-w-5xl text-[2.65rem] font-bold leading-[1.05] text-white drop-shadow-2xl sm:text-6xl md:text-7xl lg:text-[5.25rem]"
+          className="mx-auto max-w-5xl text-[2.65rem] font-bold leading-[1.05] text-white drop-shadow-2xl sm:text-6xl md:text-6xl lg:text-[5.25rem]"
         >
           Encontre clareza para sua vida{" "}
           <span className="bg-linear-to-r from-yellow-200 via-yellow-400 to-amber-500 bg-clip-text text-transparent">
