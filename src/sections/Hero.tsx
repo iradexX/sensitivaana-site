@@ -49,7 +49,7 @@ export default function Hero() {
         initial={{ scale: 1.07, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 1.8, ease: "easeOut" }}
-        className="absolute inset-0 h-full w-full object-cover object-[70%_center] lg:object-[72%_center]"
+        className="absolute inset-0 h-full w-full object-cover object-[78%_center] lg:object-[72%_center]"
       />
 
       {/* Escurecimento para melhorar a leitura */}
