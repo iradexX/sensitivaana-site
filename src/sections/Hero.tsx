@@ -220,7 +220,7 @@ export default function Hero() {
           className="
             relative
             z-10
-            -mt-16
+            -mt-20
             flex
             flex-1
             flex-col
@@ -273,7 +273,7 @@ export default function Hero() {
            drop-shadow-2xl
            min-[430px]:text-[2.45rem]
            sm:text-[2.9rem]
-            md:text-[3.25rem]
+            md:text-[3rem]
 "
           >
             Encontre clareza para sua vida{" "}
