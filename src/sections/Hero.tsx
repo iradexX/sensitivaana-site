@@ -8,7 +8,8 @@ import {
   Star,
 } from "lucide-react";
 
-import heroImage from "../assets/images/hero-principal.png";
+import heroDesktop from "../assets/images/hero-desktop.png";
+import heroMobile from "../assets/images/hero-mobile.png";
 import { CONTACT } from "../config/contact";
 
 const whatsappNumber = CONTACT.whatsapp;
@@ -169,7 +170,7 @@ export default function Hero() {
         {/* Área superior da foto */}
         <div className="relative h-[42vh] min-h-80 max-h-107.5 overflow-hidden">
           <motion.img
-            src={heroImage}
+            src={heroMobile}
             alt="Sensitiva Ana realizando atendimento espiritual com cartas de Tarot"
             initial={{ scale: 1.06, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
@@ -179,7 +180,7 @@ export default function Hero() {
               inset-0
               h-full
               w-full
-             object-[70%_8%]
+             object-top
              sm:object-[70%_10%]
              "
           />
@@ -393,7 +394,7 @@ export default function Hero() {
       >
         {/* Imagem desktop */}
         <motion.img
-          src={heroImage}
+          src={heroDesktop}
           alt="Sensitiva Ana realizando atendimento espiritual com cartas de Tarot"
           initial={{ scale: 1.06, opacity: 0 }}
           animate={{ scale: 1.04, opacity: 1 }}
@@ -403,7 +404,6 @@ export default function Hero() {
             inset-0
             h-full
             w-full
-            translate-x-[8%]
             object-cover
             object-center
           "
